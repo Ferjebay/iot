@@ -1,0 +1,16 @@
+[
+    {
+        "id": "8667b7e6-8727-497a-ab9d-85c7aa247b16",
+        "email": "juan@gmail.com",
+        "password": "MTIzNDU=",
+        "usuario": "Byron Francisco Saa Ayala",
+        "rol": "admin"
+    },
+    {
+        "id": "f3a2e792-3463-4cdc-ab03-48810f95df42",
+        "email": "jorge@gmail.com",
+        "password": "NTQzMjE=",
+        "usuario": "Jorge Luis Romero Caicedo",
+        "rol": "invitado"
+    }    
+]

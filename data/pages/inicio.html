@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../assets/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="../assets/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <title>Document</title>
+</head>
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark navegacion"></nav>
+
+    <div class="container mt-4">
+        <div class="row d-flex justify-content-center">
+            <div class="col-6 col-sm-4">
+                <div class="card text-center mb-3" style="max-width: 18rem;">
+                    <div class="card-header">Distancia</div>
+                    <div class="card-body text-success">
+                        <h4 class="card-title txtDistancia">
+                            ----
+                        </h4>                        
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 col-sm-4">
+                <div class="card text-center mb-3" style="max-width: 18rem;">
+                    <div class="card-header">Temperatura</div>
+                    <div class="card-body text-success">
+                        <h4 class="card-title txtTemperatura">
+                            ----
+                        </h4>                        
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 col-sm-4">
+                <div class="card text-center mb-3" style="max-width: 18rem;">
+                    <div class="card-header">Humedad</div>
+                    <div class="card-body text-success">
+                        <h4 class="card-title txtHumedad">
+                            ----
+                        </h4>                        
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 col-sm-5">
+                <div class="card text-center mb-3">
+                    <div class="card-header">Luminocidad</div>
+                    <div class="card-body text-success">
+                        <h4 class="card-title txtLuminocidad">
+                            ----
+                        </h4>                        
+                    </div>
+                </div>
+            </div>
+            <div class="col-10 col-sm-5">
+                <div class="card text-center mb-3">
+                    <div class="card-header">Indice de Calor</div>
+                    <div class="card-body text-success">
+                        <h4 class="card-title txtIndice">
+                            ----
+                        </h4>                        
+                    </div>
+                </div>
+            </div>            
+        </div>
+    </div>
+
+    <div class="container mt-4">
+        <div class="row d-flex justify-content-center">
+            <div class="col-10 col-md-4">
+                <div class="card text-center mb-3" style="max-width: 18rem;">
+                    <div class="card-header">Foco 1</div>
+                    <div class="card-body text-success">
+                        <div class="container mt-4">
+                            <div class="row">
+                                <label class="form-check-label col-4 col-md-4 d-flex fw-bolder text-danger">
+                                    OFF
+                                </label>
+                                <div class="form-check form-switch col-4 col-md-3 d-flex justify-content-center">
+                                    <input class="form-check-input" id="foco1" type="checkbox" role="switch" value="foco1">
+                                </div>
+                                <label class="form-check-label col-4 col-md-4 fw-bolder text-success">
+                                    ON
+                                </label>
+                            </div>
+                        </div>                         
+                    </div>
+                </div>
+            </div>
+            <div class="col-10 col-md-4">
+                <div class="card text-center mb-3" style="max-width: 18rem;">
+                    <div class="card-header">Foco 2</div>
+                    <div class="card-body text-success">
+                        <div class="container mt-4">
+                            <div class="row">
+                                <label class="form-check-label col-4 col-md-4 d-flex fw-bolder text-danger">
+                                    OFF
+                                </label>
+                                <div class="form-check form-switch col-4 col-md-3 d-flex justify-content-center">
+                                    <input class="form-check-input" id="foco2" type="checkbox" role="switch">
+                                </div>
+                                <label class="form-check-label col-4 col-md-4 fw-bolder text-success">
+                                    ON
+                                </label>
+                            </div>
+                        </div>                        
+                    </div>
+                </div>
+            </div>
+            <div class="col-10 col-md-4">
+                <div class="card text-center mb-3" style="max-width: 18rem;">
+                    <div class="card-header">Foco 3</div>
+                    <div class="card-body text-success">
+                        <div class="container mt-4">
+                            <div class="row">
+                                <label class="form-check-label col-4 col-md-4 d-flex fw-bolder text-danger">
+                                    OFF
+                                </label>
+                                <div class="form-check form-switch col-4 col-md-3 d-flex justify-content-center">
+                                    <input class="form-check-input" id="foco3" type="checkbox" role="switch">
+                                </div>
+                                <label class="form-check-label col-4 col-md-4 fw-bolder text-success">
+                                    ON
+                                </label>
+                            </div>
+                        </div>                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="../assets/sweetalert2@11.js"></script>
+    <script src="../assets/global.js"></script>     
+    <script src="../assets/helpers.js"></script>  
+    <script src="../assets/control.js"></script>   
+    <script>
+      chequearSesion();      
+    </script>
+</body>
+</html>

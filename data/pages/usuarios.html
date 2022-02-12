@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../assets/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="../assets/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="../assets/sweetalert2@11.js"></script>        
+    <title>Document</title>
+</head>
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark navegacion"></nav>
+
+  <div class="container mt-4">    
+      <div class="row">
+          <div class="col-sm-12 d-flex justify-content-end">
+            <button class="btn btn-success btn-sm btn-crear">
+              Crear Usuario
+            </button>
+          </div>
+          <div class="col-sm-10 offset-sm-1">
+              <table class="table">
+                  <thead>
+                    <tr>
+                      <th scope="col">#</th>
+                      <th scope="col">Usuario</th>
+                      <th scope="col">Email</th>
+                      <th scope="col">Rol</th>
+                      <th scope="col">Acciones</th>
+                    </tr>
+                  </thead>
+                  <tbody class="tr-users">
+                    
+                  </tbody>
+              </table>
+          </div>
+      </div>
+  </div>
+
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header bg-success text-white">
+          <h5 class="modal-title" id="modal-title"></h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <form id="formCrearUsuario">
+          <div class="modal-body">
+            <div class="mb-3">
+              <label for="txt-usuario" class="form-label">Usuario</label>
+              <input type="text" 
+                class="form-control" 
+                id="txt-usuario" 
+                placeholder="Nombre del usuario"
+                autocomplete="off"
+                required>
+            </div>
+            <div class="mb-3">
+              <label for="txt-email" class="form-label">Email</label>
+              <input type="text" 
+                class="form-control" 
+                id="txt-email" 
+                autocomplete="off"
+                placeholder="Ingrese un email"
+                required>
+            </div>
+            <div class="mb-3">
+              <label for="txt-email" class="form-label">Rol</label>
+              <select id="rol-user" class="form-select">
+                <option value="admin">Administrador</option>
+                <option value="invitado">Invitado</option>
+              </select>
+            </div>
+            <div class="mb-3">
+              <label for="txt-password" class="form-label">Contraseña</label>
+              <input type="password" 
+                class="form-control" 
+                id="txt-password"                 
+                placeholder="Ingrese una contraseña"
+                required>
+            </div>
+            <div class="mb-3">
+              <label for="txt-confirm-password" class="form-label">Confirmar Contraseña:</label>
+              <input type="password" 
+                class="form-control" 
+                id="txt-confirm-password"                 
+                placeholder="Confirmar contraseña"
+                required>
+              <input type="hidden" id="user-id">
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            <button type="submit" class="btn btn-primary btn-form">Agregar</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+  <script src="../assets/uuid.min.js"></script>
+  <script src="../assets/global.js"></script>     
+  <script src="../assets/helpers.js"></script>     
+  <script src="../assets/usuario.js">
+   
+  </script>
+</body>
+</html>
